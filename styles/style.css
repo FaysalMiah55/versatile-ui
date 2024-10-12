@@ -43,7 +43,7 @@
 
 /* header */
 header{
-    margin: 50px 190px;
+    margin: 50px 100px;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 /* navbar */
@@ -81,13 +81,16 @@ nav ul li a{
 .banner-container{
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
 }
 .banner-left{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 28px;
+    width: 450;
+    height: 440;
+    margin-right: 80px;
 }
 .banner-title{
     font-size: 78px;
@@ -119,36 +122,64 @@ nav ul li a{
 .banner-right img{
     position: relative;
 }
+.collage-1{
+    padding: 24px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+
+    margin: -160px 0 0 -110px;
+}
+
+.video-icon{
+    color: white;         
+    padding: 5px 10px;    
+    border: none;          
+    border-radius: 40px;    
+    font-size: 20px;       
+    cursor: pointer;
+}
 .collage-1 h3{
+    font-size: 24px;
+}
+.collage-2 h3{
     font-size: 40px;
+}
+.collage-1, .collage-2 h3{
     font-weight: 900;
 }
-.collage-1 p{
+.collage-1 p, .collage-2 p{
     font-size: 13px;
     letter-spacing: 1px;
     color: #FFFFFFA6;
 }
-.collage-1{
+.collage-2{
+    padding: 24px;
+    width: 200px;
+    height: 100px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
 
     backdrop-filter: blur(20px);
-    background: #FFFFFF1A;
+    background: rgba(255, 255, 255, 0.1);
 
-    position: absolute;
-    width: 193px;
-    height: 98px;
-    left: 1107px;
-    top: 260px;
+    margin: -400px 0 0 230px;
 }
-
 
 /* responsive */
 /* small devices */
 @media screen and (max-width: 575px) {
     header {
-        margin: 50px 50px;
+        margin: 30px 50px;
     }
     .nav-link{
         display: none;
@@ -158,11 +189,32 @@ nav ul li a{
         width: 24px;
         font-size: 20px;
     }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+    .btn{
+        padding: 8px 20px;
+        border-radius: 42px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .collage-1{
+        margin: -150px 0 0 -20px;
+    }
+    .collage-2{
+        margin: -350px 0 0 150px;
+    }
 }
 /* medium devices */
 @media screen and (min-width:576px) and (max-width:780px) {
     header {
-        margin: 50px 50px;
+        margin: 50px 80px;
+    }
+    .banner-container{
+        flex-direction: column;
     }
 }
 
