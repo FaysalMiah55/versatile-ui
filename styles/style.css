@@ -17,7 +17,9 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #222222;
+}
+body{
+    background-color: black;
     color: white;
 }
 
@@ -40,10 +42,12 @@
     font-size: 18px;
     font-weight: 600;
 }
+.section-margin{
+    margin: 100px 100px;
+}
 
 /* header */
 header{
-    margin: 50px 100px;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 /* navbar */
@@ -60,12 +64,15 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
+    color: white;
 }
 .home{
     border-radius: 46px;
     padding: 8px 20px;
 }
 .nav-container{
+    margin: 0px 150px;
+    padding: 50px;
     justify-content: space-between;
     align-items: center;
 }
@@ -79,6 +86,7 @@ nav ul li a{
 
 /* banner style */
 .banner-container{
+    margin: 0px 150px;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
@@ -90,7 +98,8 @@ nav ul li a{
     gap: 28px;
     width: 450;
     height: 440;
-    margin-right: 80px;
+    margin-right: 10px;
+    margin-top: 100px;
 }
 .banner-title{
     font-size: 78px;
@@ -117,7 +126,7 @@ nav ul li a{
     border: 1px solid rgb(255, 255, 255);
 }
 .banner-right{
-    margin-top: 20px;
+    margin-top: -250px;
 }
 .banner-right img{
     position: relative;
@@ -173,6 +182,12 @@ nav ul li a{
     background: rgba(255, 255, 255, 0.1);
 
     margin: -400px 0 0 230px;
+}
+
+/* main */
+/* change habit section */
+#change-habits{
+    
 }
 
 /* responsive */
