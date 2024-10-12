@@ -41,6 +41,7 @@ body{
     border-radius: 42px;
     font-size: 18px;
     font-weight: 600;
+    color: white;
 }
 .section-margin{
     margin: 100px 150px;
@@ -131,6 +132,7 @@ nav ul li a{
     border: none;
 }
 .btn-two{
+    background: none;
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
 }
@@ -222,12 +224,38 @@ nav ul li a{
 .habit-card{
     padding: 10px;
 }
-.habir-img{
+.habit-img{
     height: 180px;
     width: 180px;
     border-radius: 50%;
     border: 1px solid #FFFFFF80;
     margin: 30px 0px;
+}
+
+/* run extra section */
+#run{
+    padding: 30px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+    align-items: center;
+}
+.run-container{
+    width: 440px;
+    height: 300px;
+    padding: 20px;
+}
+.run-title{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+}
+#run p{
+    font-size: 14px;
+    margin: 14px 0px;
+}
+#run img{
+    border-radius: 18px;
 }
 
 /* responsive */
@@ -291,7 +319,31 @@ nav ul li a{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    #run{
+        padding: 5px;
+        border-radius: 18px;
+        background: rgb(34, 34, 34);
+    }
+    /* .run-container{
+        width: 800px;
+        height: 800px;
+    } */
+    /* .run-title{
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 120%;
+    } */
+    /* #run p{
+        font-size: 14px;
+        margin: 8px 0px;
+    } */
+    /* #run img{
+        border-radius: 18px;
+        width: 320px;
+        height: 260px;
+    } */ 
 }
+
 /* medium devices */
 @media screen and (min-width:576px) and (max-width:920px) {
     header {
@@ -329,6 +381,27 @@ nav ul li a{
     .habit-cards-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #run{
+        padding: 20px;
+        border-radius: 18px;
+        background: rgb(34, 34, 34);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .run-title{
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 120%;
+    }
+    #run p{
+        font-size: 14px;
+        margin: 8px 0px;
+    }
+    #run img{
+        border-radius: 18px;
+        width: 260px;
+        height: 320px;
     }
 }
 
