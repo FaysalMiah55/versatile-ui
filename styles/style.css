@@ -25,11 +25,20 @@
 .display-flex{
     display: flex;
 }
+.text-description-color{
+    color: #FFFFFF80;
+}
 .orange-color{
     color: #E6533C;
 }
 .orange-bg{
     background-color: #E6533C;
+}
+.btn{
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* header */
@@ -41,6 +50,10 @@ header{
 nav ul{
     gap: 45px;
     font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    padding: 12px;
 }
 nav ul li {
     list-style: none;
@@ -64,16 +77,92 @@ nav ul li a{
     display: none;
 }
 
+/* banner style */
+.banner-container{
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.banner-left{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+}
+.banner-title{
+    font-size: 78px;
+    font-weight: 900;
+}
+.banner-span{
+    font-weight: 400;
+    font-size: 78px;
+}
+.banner-description{
+    font-size: 16px;
+}
+.btn-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+}
+.btn-one{
+    border: none;
+}
+.btn-two{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+}
+.banner-right{
+    margin-top: 20px;
+}
+.banner-right img{
+    position: relative;
+}
+.collage-1 h3{
+    font-size: 40px;
+    font-weight: 900;
+}
+.collage-1 p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #FFFFFFA6;
+}
+.collage-1{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+
+    backdrop-filter: blur(20px);
+    background: #FFFFFF1A;
+
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    left: 1107px;
+    top: 260px;
+}
+
+
 /* responsive */
-@media screen and (max-width: 572px) {
+/* small devices */
+@media screen and (max-width: 575px) {
     header {
-        margin: 20px 50px;
+        margin: 50px 50px;
     }
     .nav-link{
         display: none;
     }
     .hambergur{
         display: block;
+        width: 24px;
+        font-size: 20px;
+    }
+}
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:780px) {
+    header {
+        margin: 50px 50px;
     }
 }
 
