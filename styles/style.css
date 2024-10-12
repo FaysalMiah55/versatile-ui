@@ -172,6 +172,7 @@ nav ul li a{
     font-size: 40px;
 }
 .collage-1, .collage-2 h3{
+    color: white;
     font-weight: 900;
 }
 .collage-1 p, .collage-2 p{
@@ -233,10 +234,15 @@ nav ul li a{
 /* small devices */
 @media screen and (max-width: 575px) {
     header {
-        margin: 30px 50px;
+        margin: 0px 50px;
+        background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     }
     .nav-link{
         display: none;
+    }
+    .nav-container{
+        margin: 0px 50px;
+        gap: 50px;
     }
     .hambergur{
         display: block;
@@ -244,9 +250,17 @@ nav ul li a{
         font-size: 20px;
     }
     .banner-container{
+        margin: 0px 50px;
         flex-direction: column;
     }
+    .banner-left{
+        margin-bottom: 5px;
+    }
     .banner-title{
+        font-size: 36px;
+    }
+    .banner-span{
+        font-weight: 400;
         font-size: 36px;
     }
     .btn{
@@ -255,20 +269,66 @@ nav ul li a{
         font-size: 10px;
         font-weight: 600;
     }
+    .banner-right{
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
     .collage-1{
         margin: -150px 0 0 -20px;
     }
     .collage-2{
         margin: -350px 0 0 150px;
     }
+    #change-habits{
+        text-align: center;
+        margin-top: 250px;
+    }
+    .habit-title{
+        font-size: 28px;
+
+    }
+    .habit-cards-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 /* medium devices */
-@media screen and (min-width:576px) and (max-width:780px) {
+@media screen and (min-width:576px) and (max-width:920px) {
     header {
         margin: 50px 80px;
+        background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    }
+    .nav-container{
+        margin: 0px 50px;
+        gap: 20px;
     }
     .banner-container{
         flex-direction: column;
+        gap: 50px;
+    }
+    .banner-left{
+        margin-top: 10px;
+    }
+    .banner-title{
+        font-size: 48px;
+    }
+    .banner-right{
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    .collage-1{
+        margin: -150px 0 0 -20px;
+    }
+    .collage-2{
+        margin: -350px 0 0 20px;
+    }
+    #change-habits{
+        text-align: center;
+        margin-top: 200px;
+    }
+    .habit-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
