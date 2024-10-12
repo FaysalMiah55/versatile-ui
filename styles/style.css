@@ -1,0 +1,62 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+.inter-font-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.oleo-script-regular {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: white;
+}
+
+/* common style */
+.display-flex{
+    display: flex;
+}
+.orange-color{
+    color: #E6533C;
+}
+.orange-bg{
+    background-color: #E6533C;
+}
+
+/* header */
+header{
+    margin: 50px 190px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+/* navbar */
+nav ul{
+    gap: 45px;
+    font-size: 18px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.home{
+    border-radius: 46px;
+    padding: 8px 20px;
+}
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 36px;
+    font-weight: 800;
+}
