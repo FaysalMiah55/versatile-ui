@@ -60,3 +60,20 @@ nav ul li a{
     font-size: 36px;
     font-weight: 800;
 }
+.hambergur{
+    display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 572px) {
+    header {
+        margin: 20px 50px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .hambergur{
+        display: block;
+    }
+}
+
