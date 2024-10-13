@@ -354,6 +354,51 @@ table td{
     margin: 20px 0px;
 }
 
+/* team style */
+#team{
+    text-align: center;
+}
+.team-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+.team-description{
+    margin: 14px 0px;
+}
+.team-container{
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 60px;
+}
+.team{
+    position: relative;
+    overflow: hidden;
+}
+.team img{
+    width: 320px;
+    height: 270px;
+    display: block;
+    border-radius: 18px;
+}
+.team-content{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    border-radius: 18px;
+}
+.team-content h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+.team-content p{
+    color: #FFFFFF80;
+    font-size: 16px;
+}
 
 /* responsive */
 /* small devices */
@@ -444,6 +489,25 @@ table td{
     .input-field input, .input-field select{
         padding: 5px 10px;
     }
+    #team{
+        margin: 20px 50px;
+    }
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .team-title{
+        font-size: 28px;
+    }
+    .team{
+        margin: 10px 20px;
+    }
+    .team img{
+        width: 500px;
+        height: 280px;
+        display: block;
+        border-radius: 18px;
+    }
 }
 
 /* medium devices */
@@ -515,6 +579,13 @@ table td{
     }
     .input-field input, .input-field select{
         padding: 10px 15px;
+    }
+    #team{
+        margin: 50px 80px;
+    }
+    .team img{
+        width: 200px;
+        height: 280px;
     }
 }
 
