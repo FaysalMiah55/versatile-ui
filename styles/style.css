@@ -400,6 +400,65 @@ table td{
     font-size: 16px;
 }
 
+/* footer */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+    justify-content: space-between;
+    gap: 50px;
+    width: 80%;
+}
+.footer-fitness{
+    margin: 80px 0px;
+    /* width: 700px; */
+    /* height: 180px; */
+}
+.footer-title{
+    color: #E6533C;
+    font-size: 70px;
+    font-weight: 800;
+}
+.footer-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0px;
+}
+.footer-text-container{
+    justify-content: right;
+    gap: 50px;
+    padding: 100px;
+}
+.text-content{
+    text-align: left;
+    width: 220px;
+    height: 150px;
+}
+.text-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.text-content ul li{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.text-content ul li{
+    list-style: none;
+}
+.right{
+    margin: 0 auto;
+}
+.right hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.right p{
+    font-size: 20px;
+    text-align: center;
+    padding: 35px;
+}
+
 /* responsive */
 /* small devices */
 @media screen and (max-width: 575px) {
@@ -586,6 +645,13 @@ table td{
     .team img{
         width: 200px;
         height: 280px;
+    }
+    .footer-container{
+        margin: 100px 50px;
+        flex-direction: column;
+    }
+    .text-content{
+        margin: 100px 50px;
     }
 }
 
